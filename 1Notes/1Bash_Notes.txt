@@ -1,0 +1,98 @@
+Global variables
+env cmd will give uou the list of environmental variables.
+printenv does the same thing what env does additonal u can printenv USER.
+
+local variables
+set cmd will give uou the list of local variables.
+
+if we want to export our variable to all shell use export VARIABLENAME.
+
+# To creat
+
+# EXIT CODES
+
+1 Catchall for general errors
+2 Misuse of shell builitins
+126 Command invoked cannot execute
+127 command not found
+128 Invalid argument to EXIT
+130 Script terminated by Control-C
+255* Exit status out of range.
+
+-------------------------------------------------- LOGICAL OPERATORS -------------------------
+
+&& (AND OPERATOR)
+|| (OR OPERATOR)
+!  (NOT OPERATOR)
+
+--------------- SYMBOLIC-----------
+When use Symbolic then use (( )).
+
+Less than or equal to: <=
+greater than or equal to: >=
+Less than: <
+Greater than: >
+Equal to: =   == 
+Not equal : !=
+** (exponential symbol)
+
+--------------- STRING----------
+When use string then []
+
+-eq
+-ge
+-gt
+-le
+-lt
+-ne
+
+
+
+-----------------------------
+echo $? (This cmd shows the last exit status of your execute commands)
+if it is zero means it is success. if anything else than false.
+
+     
+df -h # commands give the hard disk info                           
+----------------------------- PARAMETERS $0 - S9 ------------------------
+Parameters is at the time of executing the file we give the values that is parametrs.
+
+Example ./script.sh -a -b -c -d -e -f -g -h -i
+            $0      $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+ You can go behind the value of 9 but u have to ${10} like this way.
+
+
+ Special Parametrs variables
+
+ $* - Includes all given parameters as a single word
+ $@ - Includes all given parameters as a Individual word
+ $# - Count all parameters
+ "RED HAT" - DOuble Quotes for dealig with compound parametrs.
+
+ shift is used to shift params.
+
+Example ./script.sh -a -b -c -d -e -f -g -h -i
+            $0      $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+shift Example ./script.sh -b -c -d -e -f -g -h -i
+            	  $0      $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+shift 3 Example ./script.sh -d -e -f -g -h -i
+            	  $0      $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+
+
+--------------------------- MATH -----------------
+
+For Math we use (let) command.
+
+
+bc is tool is used in linux for doing maths opration
+bc-q (stops the welcomes message and start bc also)
+scale=value (it gives precision)
+all variables names must be small.
+
+
+Use Nano editor easu to use.
+ctrl + o (to write out in the file)

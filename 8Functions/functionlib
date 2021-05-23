@@ -1,0 +1,25 @@
+NAME=""
+
+takeinput(){
+	echo "ENTER YOUR NAME PLEASE: "
+	read NAME;
+}
+
+validateinput(){
+	if [ "$NAME" = "DURGESH" ];
+ then
+	echo "YOUR ARE GREAT"
+else
+	echo "YOUR ARE DEVIL"
+fi
+}
+
+fun1(){
+	echo "THE  FUNCTION1 IS RUNNING"
+}
+
+
+fun2(){
+	echo "THE  FUNCTION2 IS RUNNING"
+}
+
