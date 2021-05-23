@@ -96,3 +96,38 @@ all variables names must be small.
 
 Use Nano editor easu to use.
 ctrl + o (to write out in the file)
+
+
+---------------- Word count -------------
+wc filename  or wc > filename gives the word count.
+
+
+2 is standard error
+0 is output 
+1 is input
+
+
+less and more help us to read the page up and down used it with pipe.
+grep (globally search regualr expression and print )
+
+
+
+
+grep stringYouWant fileName
+
+
+tee helps us to wrote in the file and also echo that it out.
+
+
+#----------------------------TEXT EDITOR ------------------------
+
+vim filename (file will be created of that name)
+hit (i)key to get in insert Mode.
+
+press (esc) key to get out from Insert Mode.
+
+TO write in the file after isnerting it press (:)  then w.
+To quit (:) q.
+
+If you dont want to overide the thing then (:q!)
+(:set number) this will set the number
